@@ -35,22 +35,3 @@ def locate_val(arr, val):
     
     # val not found in arr
     return -1
-
-tests = []
-
-tests.append({ 
-    'input': {
-        'arr': [13,11,10,7,4,3,0],
-        'val': 1
-    },
-    'output': 6
-})
-
-for i in range(0,len(tests)-1):
-    result = locate_val(tests[i][{'arr'}], tests[i][{'val'}])
-    output = tests[i]['output']
-    print('Result: ',result)
-    if result != output:
-        print('Test Failed. \n Expected: ', output,'\n Detected: ',result)
-    else:
-        print ('Test Passed')
